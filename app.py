@@ -9,7 +9,7 @@ from scipy.io.wavfile import write
 
 app = Flask(__name__)
 
-loaded_model_cnn = tensorflow.keras.models.load_model('model_cnn.h5')
+loaded_model_cnn = tensorflow.keras.models.load_model('model_LSTM.h5')
 
 
 def extract_features(file,ZCR,stft,mfcc,rms,mel):            
